@@ -1,0 +1,828 @@
+:root{
+    --primary-color:#1e2d78;
+    --secondry-color:#eef7ff;
+    --mrak-color:#f4572e;
+    --font-primary-color:#1e2d78;
+    --bink-color:#fff2f2;
+    --font-secondry-color:#8c8c8c;
+    --light-green-color:#eef7ff;
+    --head-color:#dc2726;
+    --light-head-color:#dc26267a;
+    --border-color:#1e2d7862;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*#region HEADER  */
+
+/*#region Header-tap  */
+
+.header-tap{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.header-tap ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1.5rem;
+    font-size: 0.8em;
+    row-gap: 0.7rem;
+    color: white;
+}
+
+.header-tap ul li:nth-of-type(2){
+    width: 50%;
+}
+
+.header-tap .tap-icon{
+    margin-right: 1rem;
+}
+
+/*#endregion Header-tap  */
+
+/*#region Navbar */
+
+nav ul{
+    font-size: 0.9rem;
+}
+
+nav .edit-nav-link{
+    color: var(--font-primary-color);
+    font-weight: bold;
+    padding: 2.2rem 1rem;
+}
+
+nav .edit-active{
+    border-top: 0.2rem solid var(--head-color);
+}
+
+nav .edit-container-fluid{
+    grid-gap: 15rem;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+nav .navbar-brand{
+    height: auto;
+    width: 3rem;
+    margin-left: 6vw;
+}
+
+nav .bars-icon{
+    background-color: var(--bink-color);
+    padding: 0.7rem;
+    margin: 1.2rem 0;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/*#endregion Navbar */
+
+/*#region Hero  */
+
+.hero-slider .previous-slide-icon,
+.hero-slider .next-slide-icon{
+    font-size: 1.5vw;
+    background-color: white;
+    padding: 1vw;
+    color: var(--primary-color);
+}
+
+.carousel-indicators .edit-data-bs-target{
+    background-color: var(--primary-color);
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+}
+
+.dental-practice{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    top: 15%;
+    left: 17%;
+}
+
+.dental-practice > *{
+    display: inline-block;
+    border-radius: 0.2rem;
+    width: fit-content;
+}
+
+.dental-practice p{
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding: 0.4vw 0.7vw;
+    margin: 0.6vw 0;
+    background-color: var(--mrak-color);
+}
+
+.dental-practice h1{
+    color: var(--font-primary-color);
+    background-color: white;
+    font-size: 3.2vw;
+    padding: 0.3vw 0.5vw;
+}
+
+.dental-practice button:first-of-type ,
+.dental-practice button:last-of-type{
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    padding: 1vw;
+    width: 8vw;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.dental-practice button:first-of-type{
+    color: white;
+    background-color: var(--primary-color);
+    margin-right: 0.5vw;
+}
+
+.dental-practice button:last-of-type{
+    color: var(--font-primary-color);
+    background-color: white;
+    margin-left: 0.5vw;
+}
+/*#endregion Hero  */
+
+/*#endregion HEADER  */
+
+/*#region Main*/
+
+/*#region Main Services */
+
+.edit-card{
+    border: none;
+}
+
+.edit-card-body{
+    padding-left: 0;
+}
+
+.edit-card-img-top{
+    height: 14rem;
+}
+
+.edit-card h1{
+    color: var(--font-primary-color);
+    font-size: 1.5rem;
+}
+
+.edit-card .branch-text{
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+.read-more{
+    color: var(--font-primary-color);
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.read-more-circle{
+    width: calc(1.2rem + 1.7vw);
+    margin-left: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.read-more-circle::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    color: var(--font-primary-color);
+    content: "\f105";
+    top: 0.6vw;
+    left: 1.6vw;
+    font-size: 0.9rem;
+}
+
+@media (min-width:790px){
+    .read-more-circle::before{
+        top: 0.6vw;
+        left: 1.1vw;
+        font-size: 1.1rem;
+    }
+}
+
+.read-more-circle img{
+    width: 100%;
+    animation: read-more 4s linear infinite;
+}
+
+@keyframes  read-more{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.edit-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+.edit-card ul li{
+    margin: 0.9rem 0;
+}
+
+.edit-card .plus-icon{
+    color: var(--mrak-color);
+    margin-right: 1rem;
+}
+
+.working-hours{
+    background-color: var(--bink-color);
+    text-align: center;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.working-hours h1{
+    color: var(--font-primary-color);
+    font-size: 2rem;
+    margin: 1.9rem 0 2rem 0;
+}
+
+.working-hours ul{
+    margin: 0 0 3.7rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.working-hours ul li{
+    color: var(--font-secondry-color);
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.working-hours .dots{
+    color: var(--mrak-color);
+    margin: 0 0.5rem;
+}
+
+.working-hours .call-us{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    margin: 0 -1rem;
+}
+
+.chat{
+    position: absolute;
+    top: 16%;
+    font-weight: bold;
+    right: 1%;
+    font-size: 1.2vw;
+    text-align: center;
+    width: 8vw;
+    padding: 0.9vw 1.3vw;
+    background-color: var(--head-color);
+    color: white;
+    border-radius: 45%;
+}
+
+.chat span{
+    margin-right: 0.3rem;
+}
+
+/*#endregion Main Services */
+
+/*#region Main Fetures */
+
+.main-fetures .feture-img{
+    height: 60%;
+}
+
+.main-fetures .feture-head{
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--font-primary-color);
+}
+
+.main-fetures .feture-branch{
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+/*#endregion Main Fetures */
+
+/*#region Dental practice show*/
+
+.dental-practice-show .description{
+    background-color: var(--light-green-color);
+    z-index: -1;
+}
+
+.dental-practice-show .content{
+    width: 50%;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.dental-practice-show .content >*{
+    display: inline-block;
+    border-radius: 0.5rem;
+}
+
+.dental-practice-show .content h2{
+    color: var(--head-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.dental-practice-show .content h3{
+    color: var(--font-primary-color);
+    font-size: 2rem;
+}
+
+.dental-practice-show .content small{
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+.dental-practice-show .content h5{
+    color: var(--head-color);
+    font-size: 1.3rem;
+    margin: 3rem 0 0 0;
+}
+
+.dental-practice-show .content .signture{
+    position: absolute;
+    opacity: 0.3;
+    top: 73%;
+    z-index: -1;
+    left: 9%;
+    width: 10rem;
+}
+
+.dental-practice-show .play-video-img-continer{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    cursor: pointer;
+    width: 16.5%;
+}
+
+.dental-practice-show .play-video-img-continer::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: -0.1rem;
+    left: -0.1rem;
+    width: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: show 1.5s linear infinite;
+}
+
+.dental-practice-show .play-video-img-continer::after{
+    content: "";
+    position: absolute;
+    height: 117.5%;
+    top: -0.69rem;
+    left: -0.69rem;
+    width: 117.5%;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: show 1.5s linear 700ms infinite;
+}
+
+@keyframes show{
+    0%{
+        transform: scale(1);
+        border: 2px solid white;
+        opacity: 0.7;
+    }
+
+    50%{
+        transform: scale(1.2);
+        border: 2px solid white;
+    }
+
+    100%{
+        opacity: 0.1;
+        transform: scale(1.2);
+        border: 2px solid white;
+        visibility: hidden;
+    }
+}
+
+.dental-practice-show .play-video-img-continer img{width: 100%;}
+
+/*#endregion Dental practice show*/
+
+/*#region Our Clients  */
+
+.our-clients{
+    background-color: var(--bink-color);
+    padding: 5rem 0;
+}
+
+.our-clients .section-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+
+.our-clients .head-title{
+    text-align: center;
+    color: var(--font-primary-color);
+}
+
+.our-clients .title-text{
+    text-align: center;
+    color: var(--font-secondry-color);
+}
+
+
+.our-clients .previous-slide-icon,
+.our-clients .next-slide-icon{
+    color: var(--font-primary-color);
+    font-size: 1.5rem;
+}
+
+.our-clients .clients-img{
+    width: 40%;
+    height: 40%;
+}
+
+.our-clients .client-card::after{
+    position: absolute;
+    text-align: center;
+    border-radius: 0.3rem;
+    top:0%;
+    right: 28%;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.our-clients .client-card:nth-of-type(1):after{content: "47";}
+.our-clients .client-card:nth-of-type(2):after{content: "68";}
+.our-clients .client-card:nth-of-type(3):after{content: "58";}
+.our-clients .client-card:nth-of-type(4):after{content: "45";}
+.our-clients .client-card:nth-of-type(5):after{content: "70";}
+.our-clients .client-card:nth-of-type(6):after{content: "99";}
+.our-clients .client-card:nth-of-type(7):after{content: "90";}
+.our-clients .client-card:nth-of-type(7):after{content: "83";}
+.our-clients .client-card:nth-of-type(7):after{content: "48";}
+
+.our-clients .title{
+    color: var(--font-primary-color);
+    font-size: 1.3rem;
+}
+
+.our-clients .description{
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+.our-clients .name{
+    color: var(--mrak-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/*#endregion Our Clients */
+
+/*#region Discount Plans  */
+
+.discount-plans{
+    background-color: var(--primary-color);
+}
+
+.discount-plans p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.discount-plans span{
+    color: var(--head-color);
+}
+
+.discount-plans small{
+    color: var(--font-secondry-color);
+    font-size: 1rem;
+}
+
+.discount-plans button{
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    color: var(--primary-color);
+    border: none;
+    background-color: white;
+}
+
+/*#endregion Discount Plans  */
+
+/*#region Fast & Professional */
+
+.fast-professional{
+    background-color: var(--bink-color);
+    width: 100%;
+}
+
+.fast-professional ul li{
+    cursor: pointer;
+    color: var(--font-primary-color);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 13rem;
+}
+
+.fast-professional ul .active{
+    border-bottom: 0.3rem solid var(--head-color);
+} 
+
+.fast-professional ul li:hover{
+    border-bottom: 0.3rem solid var(--light-head-color);
+}
+
+
+
+.fast-professional .edit-divider{
+    height: 0.3rem;
+    margin: -0.3rem 0 0 0;
+    background-color: var(--font-secondry-color);
+}
+
+.fast-professional h1{
+    color: var(--font-primary-color);
+    font-size: 1.5rem;
+}
+
+.fast-professional p{
+    color: var(--font-secondry-color);
+    font-size: 0.9rem;
+}
+
+.fast-professional small{
+    color: var(--font-secondry-color);
+
+}
+
+
+/*#endregion Fast & Professional */
+     
+/*#region Allsmiles team*/
+
+.allsmiles-team .allsmiles-team-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+
+.allsmiles-team .allsmiles-team-head{
+    text-align: center;
+    color: var(--font-primary-color);
+}
+
+.allsmiles-team .description{
+    text-align: center;
+    color: var(--font-secondry-color);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.allsmiles-team .team-card::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    content: "\f1e0";
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.7rem;
+    background-color: var(--primary-color);
+    top: 5%;
+    border-radius: 0.5rem;
+    left: -7%;
+}
+
+.allsmiles-team .team-card h2{
+    color: var(--font-primary-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.allsmiles-team .team-card p{
+    color: var(--mrak-color);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*#endregion Allsmiles team*/
+
+/*#region Requst an appointment*/
+
+.requst-appointment{
+    background-color: var(--secondry-color);
+    overflow: hidden;
+}
+
+.requst-appointment .skeywe{
+    margin: 0 0 0 -3rem;
+    transform: skewX(353deg);
+    overflow: hidden;
+}
+
+.requst-appointment .skeywe img{
+    width: 106%;
+    transform: skewX(-353deg);
+}
+
+.requst-appointment .skeywe .appointment-image{
+    position: absolute;
+}
+
+.requst-appointment .content{
+    width: 70%;
+}
+
+.requst-appointment .content h1{
+    color: var(--font-primary-color);
+    font-size: 1.5rem;
+}
+
+.requst-appointment .content p{
+    color: var(--font-secondry-color);
+}
+
+.requst-appointment .content input,
+.requst-appointment .content textarea{
+    border: 0.1rem solid var(--border-color);
+    background-color: transparent;
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+
+.requst-appointment .content input:hover,
+.requst-appointment .content textarea:hover{
+    outline: 0.1rem solid var(--primary-color);
+}
+
+.requst-appointment .content button{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 1rem 2rem;
+    width: 11rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+@media (max-width:786px){
+    .skeywe{
+        height: 20rem;
+    }
+}
+
+/*#endregion Requst an appointment */
+
+/*#region  Latest News */
+
+.latest-news .latest-news-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+
+.latest-news .latest-news-head{
+    text-align: center;
+    color: var(--font-primary-color);
+}
+
+.latest-news .description{
+    text-align: center;
+    color: var(--font-secondry-color);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.latest-news .news-card .p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+
+.latest-news .news-card h1{
+    color: var(--font-primary-color);
+    font-size: 1.5rem;
+}
+
+.latest-news .news-card small{
+    color: var(--font-secondry-color);
+}
+
+.latest-news .news-card h6{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--font-primary-color);
+}
+
+/*#endregion  Latest News */
+
+/*#endregion Main*/
+
+/*#region Footer */
+
+.footer-slider{
+    background-color: var(--bink-color);
+    overflow: hidden;
+    position: relative;
+    height: 10rem;
+}
+
+.footer-slider .trnslate{
+    position: absolute;
+    top: 2rem;
+    left: -12rem;
+}
+
+.footer-slider .num1{animation: trnslate 8s linear infinite;}
+.footer-slider .num2{animation: trnslate 8s linear 1s infinite;}
+.footer-slider .num3{animation: trnslate 8s linear 2s infinite;}
+.footer-slider .num4{animation: trnslate 8s linear 3s infinite;}
+.footer-slider .num5{animation: trnslate 8s linear 4s infinite;}
+.footer-slider .num6{animation: trnslate 8s linear 5s infinite;}
+.footer-slider .num7{animation: trnslate 8s linear 6s infinite;}
+.footer-slider .num8{animation: trnslate 8s linear 7s infinite;}
+
+
+@keyframes trnslate {
+    0%{
+        transform: translateX(0rem);
+        opacity: 0.5;
+    }
+    10%{
+        opacity: 1;
+    }
+
+    98%{
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: translateX(94rem);
+        opacity: 0.5;
+    }
+
+}
+
+.empity{
+    height: 15rem;
+}
+
+/*#endregion Footer */
