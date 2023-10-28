@@ -222,11 +222,18 @@ nav .bars-icon{
     font-size: 0.9rem;
 }
 
-@media (min-width:790px){
+@media (min-width:760px){
     .read-more-circle::before{
         top: 0.6vw;
         left: 1.1vw;
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width:425px){
+    .read-more-circle::before{
+        top: 0.9vw;
+        left: 1.9vw;
     }
 }
 
@@ -284,7 +291,7 @@ nav .bars-icon{
 .working-hours ul li{
     color: var(--font-secondry-color);
     text-align: center;
-    margin: 1rem 0;
+    margin: 1.1rem 0;
     font-size: 0.9rem;
 }
 
@@ -348,12 +355,6 @@ nav .bars-icon{
     z-index: -1;
 }
 
-.dental-practice-show .content{
-    width: 50%;
-    padding: 3rem 0;
-    position: relative;
-}
-
 .dental-practice-show .content >*{
     display: inline-block;
     border-radius: 0.5rem;
@@ -414,8 +415,8 @@ nav .bars-icon{
     content: "";
     position: absolute;
     height: 117.5%;
-    top: -0.69rem;
-    left: -0.69rem;
+    top: -0.8vw;
+    left: -0.8vw;
     width: 117.5%;
     border-radius: 50%;
     background-color: transparent;
@@ -441,6 +442,16 @@ nav .bars-icon{
         visibility: hidden;
     }
 }
+
+@media (max-width:990px){
+    .dental-practice-show 
+    .play-video-img-continer::after{
+        top: -1.59vw;
+        left: -1.69vw;
+    }
+}
+
+
 
 .dental-practice-show .play-video-img-continer img{width: 100%;}
 
